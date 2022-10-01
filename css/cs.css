@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Lobster&family=Oleo+Script+Swash+Caps&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+
+body {
+    background-color: black;
+}
+
+.navbar {
+    font-family: 'Courgette', cursive;
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    flex: 20%;
+    margin: left 10%;
+    /* border: 1px solid green; */
+    text-align: center;
+    font-size: 15px;
+}
+
+.menu {
+    flex: 70%;
+    /*border: 1px solid green; */
+    text-align: right;
+    padding: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+.menu a:hover {
+    color: rgb(129, 12, 129);
+    border-top: 4px solid rgb(129, 12, 129);
+
+}
+
+#botao {
+    background: rgba(50, 2, 89, 0.458);
+    padding: 10px 25px;
+    color: rgb(129, 12, 129);
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+#botao:hover {
+    border: none;
+    background: white;
+}
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.headline {
+    margin-left: 5%;
+    flex: 25%;
+    /* border: 1px solid greenyellow;*/
+}
+
+.p1 {
+    /* border: 1px solid greenyellow; */
+    /*margin-top: 140px; */
+    text-align: center;
+    /*color: rgb(255, 0, 255); */
+    color: rgb(129, 12, 129);
+    font-size: 25px;
+}
+
+
+.contact-btn {
+    display: inline-block;
+    background: rgba(50, 2, 89, 0.458);
+    padding: 20px;
+    color: rgb(129, 12, 129);
+    text-transform: uppercase;
+    border-radius: 10px;
+    text-decoration: none;
+    padding-right: 65px;
+    padding-left: 65px;
+}
+
+.contact-btn:hover {
+    background: white;
+}
+
+.headline h2 {
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(129, 12, 129);
+    padding: 0;
+    margin: 0;
+}
+
+.headline p {
+    color: rgb(129, 12, 129);
+    text-align: left;
+}
+
+.headline2 {
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.headline2 {
+    animation: headline2 500ms steps(40) infinite, normal, typing 4s steps(40) 1s normal both;
+}
+
+.headline3 {
+    margin-left: 5%;
+    flex: 25%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    /*background: rgba(11, 12, 26, 255); */
+    background: rgba(19, 7, 23, 255);
+    border: 1px solid rgb(58, 1, 81);
+    /*background-image: url(../img/ciber.gif);*/
+    font-family: 'Special Elite', monospace;
+
+}
+
+
+
+.headline4 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 9em;
+    }
+}
+
+@keyframes headline2 {
+    from {
+        border-right-color: white;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.img-headline {
+    margin-right: 5%;
+    flex: 40%;
+    /*border: 1px solid greenyellow;*/
+    text-align: center;
+}
+
+section {
+    display: inline-block;
+    margin-top: 80px;
+    /*border: 1px solid brown;*/
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    text-align: center;
+    /*width: 90%;*/
+}
+
+section h2 {
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+    color: white;
+}
+
+.linguagens {
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.card {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid rgb(129, 12, 129);
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+h3 {
+    color: rgb(129, 12, 129);
+}
+
+.card:hover {
+    background: rgb(129, 12, 129);
+    color: white;
+    padding: 40px;
+}
+
+.card:hover img {
+    display: none;
+}
+
+.card:hover .card-text {
+    display: none;
+}
+
+.card:hover .texto-oculto {
+    display: block;
+}
+
+.texto-oculto {
+    display: none;
+}
